@@ -2,7 +2,6 @@ let items = document.querySelectorAll('.item')
 let prev = document.getElementById('prev')
 let next = document.getElementById('next')
 
-console.log(items)
 let itemsL = items.length
 activy = 0
 console.log(itemsL)
