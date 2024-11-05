@@ -1,0 +1,94 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.item {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+
+.activy {
+  display: block;
+}
+
+.item .tittle {
+  font-family: "Roboto", sans-serif;
+  font-size: 12rem;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item .refriF {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.item .refri {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  z-index: 2;
+
+}
+
+#next, #prev {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(240, 255, 255, 0.541);
+  border: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#next:hover, #prev:hover {
+  background-color: rgb(240, 255, 255);
+  color: black;
+}
+
+#prev {
+  left: 30px;
+}
+
+#next {
+  right: 30px;
+}
+
+@keyframes toActive {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.item.activy img.refriF {
+  animation: toActive 1s ease-in-out 1;
+}
+
+.item.activy .tittle {
+  animation: toActive 1s ease-in-out 1;
+}
+
+
