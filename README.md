@@ -1,4 +1,5 @@
 # Drinks Menu
+![frutas](https://github.com/user-attachments/assets/edad9b46-d7c3-4ff6-afe1-2fd5bba1a2ee)
 
 
 In this project I created a very colorful drinks menu with transition animations between one drink and another.
