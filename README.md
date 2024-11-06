@@ -1,7 +1,7 @@
 # Drinks Menu
 
 
-descripition
+In this project I created a very colorful drinks menu with transition animations between one drink and another.
 
 ## Learnings
 
